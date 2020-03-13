@@ -11,10 +11,11 @@ namespace Exercice_2
     {
         private string nom;
         private string prenom;
-        private int anneeAd;
         private int code;
+        private int anneeAd;
+        
 
-        public Adherent(string nom, string prenom, int anneeAd, int code)
+        public Adherent(string nom, string prenom, int code, int anneeAd)
         {
             this.nom = nom;
             this.prenom = prenom;
