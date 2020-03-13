@@ -13,5 +13,14 @@ namespace Exercice_2
         private string prenom;
         private int anneeAd;
         private int code;
+
+        public Adherent(string nom, string prenom, int anneeAd, int code)
+        {
+            this.nom = nom;
+            this.prenom = prenom;
+            this.anneeAd = anneeAd;
+            this.code = code;
+        }
+
     }
 }
