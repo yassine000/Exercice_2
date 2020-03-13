@@ -40,15 +40,22 @@ namespace Exercice_2
             return anneeAd;
         }
         // la méthode equals()
-        public bool equals(Adherent adherent_1, Adherent adherent_2)
+        public string equals(Adherent adherentC)
         {
-            return (adherent_1.code == adherent_2.code);                        
+            if(this.code == adherentC.code)
+            {
+                return "les 2 adherents sont égaux";
+            }
+            else
+            {
+                return "les 2 adherents ne sont pas égaux";
+            }                                   
         }
         // la méthode  toString()
         public string toString()
         {
-            return "le nom de l'adherent est : " + nom + "\nle prénom de l'adherent est : " +
-                prenom + "\nle code est : " + code + "\nl'année d'adhesion est : " + anneeAd;
+            return "---l'adherent---\n\tNom : " + nom + "\n\tPrénom : " +
+                prenom + "\n\tCode : " + code + "\n\tAnnée d'adhesion : \n\t" + anneeAd;
         }
     }
 }
