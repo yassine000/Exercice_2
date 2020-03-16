@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOBJ_TP1_Exercice2
+{
+    class Adherent
+    {
+        private string nom;
+        private string prenom;
+        private int anneeAd;
+        private int code;
+       
+        // constructeur de la classe adherent
+        public Adherent(string nom, string prenom, int anneeAd, int code)
+        {
+            this.nom = nom;
+            this.prenom = prenom; ;
+            this.anneeAd = anneeAd;
+            this.code = code;
+
+        }
+
+        public void setCode(int code)
+        {
+            this.code = code;
+        }
+
+        public string getNom()
+        {
+            return nom;
+        }
+
+        public string getPrenom()
+        {
+            return prenom;
+        }
+
+        public int getAnneeAd()
+        {
+            return anneeAd;
+        }
+
+        public void equals(int code1, int code2)
+        {
+            if (code1 == code2)
+                Console.WriteLine(" les 2 adhérents sont egaux !");
+            else
+                Console.WriteLine(" les 2 adhérents sont differents !");
+        }
+
+        public string toString()
+        {
+            return "Nom : " + nom + ", Prenom : " + prenom + ", Année d'adhésion : " + anneeAd + " ,Code : " + code;
+        }
+    }
+}
